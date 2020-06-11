@@ -44,6 +44,7 @@
     - name: 'Setting PG Volumes'
       set_fact:
         pg_volumes:
+          - '/mnt:/mnt'
           - '/opt/appdata/{{pgrole}}:/books'
           - '/opt/appdata/{{pgrole}}/config:/calibre-web/config'
           - '/etc/localtime:/etc/localtime:ro'
